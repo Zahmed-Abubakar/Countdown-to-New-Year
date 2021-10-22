@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./Image/mountain1.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+.counter{
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    height: auto;
+    transform: translate(-50%,-50%);
+    /* box-shadow: 0px 0px 1px 8px lightgray; */
+    box-shadow: 0px 0px 10px lightgray;
+    padding: 14px;
+    animation: popup 1s ease forwards;
+}
+
+/* animation */
+@keyframes popup{
+    0%{top: -50%;}
+    70%{top: 59%;}
+    100%{top: 50%}
+}
+
+
+
+.counter h2{
+    font-size: 1.5rem;
+    margin: 13px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Rubik', sans-serif;
+}
+.counterTime{
+    display: flex;
+    gap: 10px;
+    margin: 15px;
+    
+}
+.counterTime .time{
+    flex-grow: 1;
+    margin-bottom: 10px;
+    padding: 12px;
+    box-shadow: 0px 0px 10px lightgray;
+}
+.counterTime .time p{
+    font-size: 3rem;
+    padding: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    display: block;
+    font-family: 'Rubik', sans-serif;
+}
+.counterTime .time span{
+    font-size: 1.6rem;
+    background-color: #000;
+    color: #fff;
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    padding: 3px;
+}
+
+
